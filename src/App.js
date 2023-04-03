@@ -31,7 +31,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <RootLayout />,
     children: [
-      { index: true, element: <NewsFeed /> },
+      { index: true, element: <Posts /> },
       // {
       //   path: "/create",
       //   element: <CreatePosts />,
@@ -40,10 +40,10 @@ const router = createBrowserRouter([
       //   path: "/friends",
       //   element: <Friends />,
       // },
-      {
-        path: "/posts",
-        element: <Posts />,
-      },
+      // {
+      //   path: "/posts",
+      //   element: <Posts />,
+      // },
 
       // {
       //   path: "/profile",
