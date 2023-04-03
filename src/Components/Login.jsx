@@ -14,6 +14,7 @@ import {
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
+import { authRoute } from '../utils/APIRoutes';
 
 
 
@@ -29,7 +30,7 @@ const Login = () => {
 
         try {
 
-            const { data } = await axios.post("http://localhost:8000/api/auth/login",
+            const { data } = await axios.post(`${authRoute}/login`,
                 values,
                 {
                     headers: {

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { ToastContainer } from 'react-toastify'
 import NewsFeed from '../pages/NewsFeed'
 import "react-toastify/dist/ReactToastify.css"
+import { postRoute } from '../utils/APIRoutes'
 
 const Posts = () => {
     const [posts, setPosts] = useState()
@@ -15,7 +16,7 @@ const Posts = () => {
         const fetchData = async () => {
             setLoading(true)
             try {
-                const { data } = await axios.get("http://localhost:8000/api/posts", {
+                const { data } = await axios.get(postRoute, {
                     headers: {
                         Authorization: accessToken
                     }

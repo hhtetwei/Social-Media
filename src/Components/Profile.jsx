@@ -85,22 +85,11 @@ const Profile = ({ posts }) => {
 
     }, [])
 
-
-
-
-
-
-
     return (
-
-
-
 
         <Box>
 
             <DrawerAndBar />
-
-
 
             <Box display="flex" maxWidth={900}
                 alignItems="center"
